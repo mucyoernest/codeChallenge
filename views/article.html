@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <script type = "text/javascript" src="/scripts/script.js"></script>  
+
+
+    <title>BlogPost</title>
+</head>
+<body>
+    <nav>
+        <div>
+        <ul>
+            <li class="navbar"><button id="popForm" onclick="openForm()">Login</button></li>
+            <li class="navbar"><button id="popUpForm" onclick="openSignForm()">Sign Up</button></li>
+            <li class="logo"><a href="../index.html">MyBlog</a></li>
+            <li class="navbar"><a href="article.html">Blogs</a></li> 
+            <li class="navbar"><a href="../index.html">Home</a></li>
+        </ul>
+    </div>
+    </nav>
+    <br>
+
+
+    <div class="sideMenu">
+
+        <a href="#home">Fashion</a>
+        <a href="#news">Music</a>
+        <a href="#contact">Lifestyle</a>
+        <a href="#about">Sports</a>
+    </div>
+    <br>
+    <div class="wrapper" style="align-items: center;">
+        <h1 style="text-align: center;">How to play a guitar</h1>
+        <img style="margin-left: 20%; width: 60%;" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Similique voluptate dolores eos commodi illo nobis quam mollitia autem a magni consequuntur fugit facilis optio error, 
+            possimus nemo. Enim, aliquam quae.</p>
+        <p style="text-align: center; font-weight: 500;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eligendi iste dolore error eaque, mollitia dolor tempora temporibus nisi excepturi velit ut officiis sapiente necessitatibus. 
+            Perspiciatis, voluptas officia! Distinctio, magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque itaque odio saepe tempore totam necessitatibus autem provident voluptate modi adipisci nulla accusamus, consectetur voluptas perferendis ut. 
+            Temporibus aspernatur cupiditate deserunt.
+        </p>        
+        <br>
+        
+
+        <div class="form-popup" style="display: block; position: relative; max-width: 300px; margin-left: 35%;">
+            <form action="" class="form-container">
+              <h1>Leave a comment</h1>
+          
+              <label for="comment"><b>Comment</b></label>
+              <input type="text" placeholder="Leave your comment" name="email" required>
+          
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+
+          <div class="form-popup" id="loginForm">
+            <form action="" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+    
+          <div class="form-popup" id="signUpForm">
+            <form action="" class="form-container">
+              <h1>Login</h1>
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" required>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeSignForm()">Close</button>
+            </form>
+          </div>
+        
+
+       
+    </div>
+   
+    
+</body>
+</html>
